@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foreach array</title>
+</head>
+
+<body>
+
+  <h1>ForEach</h1>
+
+  <div id="app"></div>
+
+  <script>
+    const products = [
+      { title: 'Burger', price: 121 },
+      { title: 'Pizza', price: 20 },
+    ];
+
+    const app = document.querySelector('#app');
+    products.forEach((product) => {
+      app.innerHTML += `<li>${product.title} - ${product.price}</li>`
+    });
+  </script>
+
+  <script src="01-for-each.html"></script>
+</body>
+
+</html>
